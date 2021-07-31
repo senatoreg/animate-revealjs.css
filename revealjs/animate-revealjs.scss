@@ -1,0 +1,415 @@
+@use 'sliding_exits/slideOutRight.scss' as * ;
+@use 'sliding_exits/slideOutUp.scss' as * ;
+@use 'sliding_exits/slideOutDown.scss' as * ;
+@use 'sliding_exits/slideOutLeft.scss' as * ;
+@use 'lightspeed/lightSpeedOutRight.scss' as * ;
+@use 'lightspeed/lightSpeedOutLeft.scss' as * ;
+@use 'lightspeed/lightSpeedInRight.scss' as * ;
+@use 'lightspeed/lightSpeedInLeft.scss' as * ;
+@use 'zooming_entrances/zoomIn.scss' as * ;
+@use 'zooming_entrances/zoomInLeft.scss' as * ;
+@use 'zooming_entrances/zoomInUp.scss' as * ;
+@use 'zooming_entrances/zoomInDown.scss' as * ;
+@use 'zooming_entrances/zoomInRight.scss' as * ;
+@use 'flippers/flipInX.scss' as * ;
+@use 'flippers/flipOutY.scss' as * ;
+@use 'flippers/flip.scss' as * ;
+@use 'flippers/flipOutX.scss' as * ;
+@use 'flippers/flipInY.scss' as * ;
+@use 'attention_seekers/shakeY.scss' as * ;
+@use 'attention_seekers/wobble.scss' as * ;
+@use 'attention_seekers/tada.scss' as * ;
+@use 'attention_seekers/rubberBand.scss' as * ;
+@use 'attention_seekers/jello.scss' as * ;
+@use 'attention_seekers/pulse.scss' as * ;
+@use 'attention_seekers/bounce.scss' as * ;
+@use 'attention_seekers/shake.scss' as * ;
+@use 'attention_seekers/flash.scss' as * ;
+@use 'attention_seekers/headShake.scss' as * ;
+@use 'attention_seekers/swing.scss' as * ;
+@use 'attention_seekers/heartBeat.scss' as * ;
+@use 'attention_seekers/shakeX.scss' as * ;
+@use 'fading_entrances/fadeIn.scss' as * ;
+@use 'fading_entrances/fadeInTopRight.scss' as * ;
+@use 'fading_entrances/fadeInBottomLeft.scss' as * ;
+@use 'fading_entrances/fadeInBottomRight.scss' as * ;
+@use 'fading_entrances/fadeInDown.scss' as * ;
+@use 'fading_entrances/fadeInLeftBig.scss' as * ;
+@use 'fading_entrances/fadeInUp.scss' as * ;
+@use 'fading_entrances/fadeInDownBig.scss' as * ;
+@use 'fading_entrances/fadeInTopLeft.scss' as * ;
+@use 'fading_entrances/fadeInRightBig.scss' as * ;
+@use 'fading_entrances/fadeInRight.scss' as * ;
+@use 'fading_entrances/fadeInLeft.scss' as * ;
+@use 'fading_entrances/fadeInUpBig.scss' as * ;
+@use 'bouncing_entrances/bounceInLeft.scss' as * ;
+@use 'bouncing_entrances/bounceInDown.scss' as * ;
+@use 'bouncing_entrances/bounceInUp.scss' as * ;
+@use 'bouncing_entrances/bounceIn.scss' as * ;
+@use 'bouncing_entrances/bounceInRight.scss' as * ;
+@use 'zooming_exits/zoomOutDown.scss' as * ;
+@use 'zooming_exits/zoomOutRight.scss' as * ;
+@use 'zooming_exits/zoomOutUp.scss' as * ;
+@use 'zooming_exits/zoomOutLeft.scss' as * ;
+@use 'zooming_exits/zoomOut.scss' as * ;
+@use '_base.scss' as * ;
+@use 'back_entrances/backInUp.scss' as * ;
+@use 'back_entrances/backInLeft.scss' as * ;
+@use 'back_entrances/backInRight.scss' as * ;
+@use 'back_entrances/backInDown.scss' as * ;
+@use 'back_exits/backOutDown.scss' as * ;
+@use 'back_exits/backOutRight.scss' as * ;
+@use 'back_exits/backOutLeft.scss' as * ;
+@use 'back_exits/backOutUp.scss' as * ;
+@use 'bouncing_exits/bounceOutDown.scss' as * ;
+@use 'bouncing_exits/bounceOutUp.scss' as * ;
+@use 'bouncing_exits/bounceOutLeft.scss' as * ;
+@use 'bouncing_exits/bounceOut.scss' as * ;
+@use 'bouncing_exits/bounceOutRight.scss' as * ;
+@use 'specials/jackInTheBox.scss' as * ;
+@use 'specials/hinge.scss' as * ;
+@use 'specials/rollOut.scss' as * ;
+@use 'specials/rollIn.scss' as * ;
+@use 'rotating_entrances/rotateInUpRight.scss' as * ;
+@use 'rotating_entrances/rotateInDownLeft.scss' as * ;
+@use 'rotating_entrances/rotateIn.scss' as * ;
+@use 'rotating_entrances/rotateInUpLeft.scss' as * ;
+@use 'rotating_entrances/rotateInDownRight.scss' as * ;
+@use 'rotating_exits/rotateOutDownLeft.scss' as * ;
+@use 'rotating_exits/rotateOutUpLeft.scss' as * ;
+@use 'rotating_exits/rotateOut.scss' as * ;
+@use 'rotating_exits/rotateOutDownRight.scss' as * ;
+@use 'rotating_exits/rotateOutUpRight.scss' as * ;
+@use 'sliding_entrances/slideInDown.scss' as * ;
+@use 'sliding_entrances/slideInLeft.scss' as * ;
+@use 'sliding_entrances/slideInUp.scss' as * ;
+@use 'sliding_entrances/slideInRight.scss' as * ;
+@use '_vars.scss' as * ;
+@use 'fading_exits/fadeOutBottomLeft.scss' as * ;
+@use 'fading_exits/fadeOutRightBig.scss' as * ;
+@use 'fading_exits/fadeOutLeftBig.scss' as * ;
+@use 'fading_exits/fadeOutUp.scss' as * ;
+@use 'fading_exits/fadeOutDown.scss' as * ;
+@use 'fading_exits/fadeOutBottomRight.scss' as * ;
+@use 'fading_exits/fadeOutUpBig.scss' as * ;
+@use 'fading_exits/fadeOutRight.scss' as * ;
+@use 'fading_exits/fadeOutTopRight.scss' as * ;
+@use 'fading_exits/fadeOutTopLeft.scss' as * ;
+@use 'fading_exits/fadeOutDownBig.scss' as * ;
+@use 'fading_exits/fadeOutLeft.scss' as * ;
+@use 'fading_exits/fadeOut.scss' as * ;
+
+@mixin visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+@mixin invisible {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.reveal .slides section .fragment.r-delay {
+    @include animated_delay-1s;
+}
+
+/* Animate CSS based Fade In */
+.reveal .slides section .fragment.r-fade-in:not(.visible) {
+}
+
+.reveal .slides section .fragment.r-fade-in.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-fade-in.visible.current-fragment {
+    @include animated;
+    @include fadeIn;
+}
+
+/* Animate CSS based Fade Out */
+.reveal .slides section .fragment.r-fade-out:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-fade-out.visible:not(.current-fragment) {
+    @include invisible;
+}
+
+.reveal .slides section .fragment.r-fade-out.visible.current-fragment {
+    @include animated;
+    @include fadeOut;
+}
+
+/* Animate CSS based Fade In Up*/
+.reveal .slides section .fragment.r-fade-in-up:not(.visible) {
+}
+
+.reveal .slides section .fragment.r-fade-in-up.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-fade-in-up.visible.current-fragment {
+    @include animated;
+    @include fadeInUp;
+}
+
+/* Animate CSS based Fade In Down*/
+.reveal .slides section .fragment.r-fade-in-down:not(.visible) {
+}
+
+.reveal .slides section .fragment.r-fade-in-down.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-fade-in-down.visible.current-fragment {
+    @include animated;
+    @include fadeInDown;
+}
+
+/* Animate CSS based Bounce */
+.reveal .slides section .fragment.r-bounce:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-bounce.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-bounce.visible.current-fragment {
+    @include animated;
+    @include bounce;
+}
+
+/* Animate CSS based Pulse */
+.reveal .slides section .fragment.r-pulse:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-pulse.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-pulse.visible.current-fragment {
+    @include animated;
+    @include pulse;
+}
+
+/* Animate CSS based Rubber Band */
+/* Animate CSS based Rubber Band */
+.reveal .slides section .fragment.r-rubber-band:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-rubber-band.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-rubber-band.visible.current-fragment {
+    @include animated;
+    @include rubberBand;
+}
+
+/* Animate CSS based Back In Up */
+.reveal .slides section .fragment.r-back-in-up:not(.visible) {
+}
+
+.reveal .slides section .fragment.r-back-in-up.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-back-in-up.visible.current-fragment {
+    @include animated;
+    @include backInUp;
+}
+
+/* Animate CSS based Back In Down */
+.reveal .slides section .fragment.r-back-in-down:not(.visible) {
+}
+
+.reveal .slides section .fragment.r-back-in-down.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-back-in-down.visible.current-fragment {
+    @include animated;
+    @include backInDown;
+}
+
+/* Animate CSS based Back Out Up */
+.reveal .slides section .fragment.r-back-out-up:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-back-out-up.visible:not(.current-fragment) {
+    @include invisible;
+}
+
+.reveal .slides section .fragment.r-back-out-up.visible.current-fragment {
+    @include animated;
+    @include backOutUp;
+}
+
+/* Animate CSS based Back Out Down */
+.reveal .slides section .fragment.r-back-out-down:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-back-out-down.visible:not(.current-fragment) {
+    @include invisible;
+}
+
+.reveal .slides section .fragment.r-back-out-down.visible.current-fragment {
+    @include animated;
+    @include backOutDown;
+}
+
+/* Animate CSS based Flip In X */
+.reveal .slides section .fragment.r-flip-in-x:not(.visible) {
+}
+
+.reveal .slides section .fragment.r-flip-in-x.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-flip-in-x.visible.current-fragment {
+    @include animated;
+    @include flipInX;
+}
+
+/* Animate CSS based Flip Out X */
+.reveal .slides section .fragment.r-flip-out-x:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-flip-out-x.visible:not(.current-fragment) {
+    @include invisible;
+}
+
+.reveal .slides section .fragment.r-flip-out-x.visible.current-fragment {
+    @include animated;
+    @include flipOutX;
+}
+
+/* Animate CSS based Zoom In Down */
+.reveal .slides section .fragment.r-zoom-in-down:not(.visible) {
+}
+
+.reveal .slides section .fragment.r-zoom-in-down.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-zoom-in-down.visible.current-fragment {
+    @include animated;
+    @include zoomInDown;
+}
+
+/* Animate CSS based Zoom Out Down */
+.reveal .slides section .fragment.r-zoom-out-down:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-zoom-out-down.visible:not(.current-fragment) {
+    @include invisible;
+}
+
+.reveal .slides section .fragment.r-zoom-out-down.visible.current-fragment {
+    @include animated;
+    @include zoomOutDown;
+}
+
+/* Animate CSS based Hinge */
+.reveal .slides section .fragment.r-hinge:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-hinge.visible:not(.current-fragment) {
+}
+
+.reveal .slides section .fragment.r-hinge.visible.current-fragment {
+    @include animated;
+    @include hinge;
+}
+
+/* Animate CSS based Back In Up then Out Down */
+.reveal .slides section .fragment.r-back-in-up-then-out-down:not(.visible) {
+}
+
+.reveal .slides section .fragment.r-back-in-up-then-out-down.visible.current-fragment {
+    @include animated;
+    @include backInUp;
+}
+
+.reveal .slides section .fragment.r-back-in-up-then-out-down.visible:not(.current-fragment)  {
+    @include animated;
+    @include backOutDown;
+}
+
+/* Animate CSS based Back In Down then Out Up */
+.reveal .slides section .fragment.r-back-in-down-then-out-up:not(.visible) {
+}
+
+.reveal .slides section .fragment.r-back-in-down-then-out-up.visible.current-fragment {
+    @include animated;
+    @include backInDown;
+}
+
+.reveal .slides section .fragment.r-back-in-down-then-out-up.visible:not(.current-fragment)  {
+    @include animated;
+    @include backOutUp;
+}
+
+/* Animate CSS based Fade In then Out */
+.reveal .slides section .fragment.r-fade-in-then-out:not(.visible) {
+}
+
+.reveal .slides section .fragment.r-fade-in-then-out.visible.current-fragment {
+    @include animated;
+    @include fadeIn;
+}
+
+.reveal .slides section .fragment.r-fade-in-then-out.visible:not(.current-fragment)  {
+    @include animated;
+    @include fadeOut;
+}
+
+/* Animate CSS based Fade In Up then Out Up */
+.reveal .slides section .fragment.r-fade-in-up-then-out-up:not(.visible) {
+}
+
+.reveal .slides section .fragment.r-fade-in-up-then-out-up.visible.current-fragment {
+    @include animated;
+    @include fadeInUp;
+}
+
+.reveal .slides section .fragment.r-fade-in-up-then-out-up.visible:not(.current-fragment)  {
+    @include animated;
+    @include fadeOutUp;
+}
+
+/* Animate CSS based Fade In Up then Out */
+.reveal .slides section .fragment.r-fade-in-up-then-out:not(.visible) {
+}
+
+.reveal .slides section .fragment.r-fade-in-up-then-out.visible.current-fragment {
+    @include animated;
+    @include fadeInUp;
+}
+
+.reveal .slides section .fragment.r-fade-in-up-then-out.visible:not(.current-fragment)  {
+    @include animated;
+    @include fadeOut;
+}
+
+/* Animate CSS based Fade In Down then Out */
+.reveal .slides section .fragment.r-fade-in-down-then-out:not(.visible) {
+}
+
+.reveal .slides section .fragment.r-fade-in-down-then-out.visible.current-fragment {
+    @include animated;
+    @include fadeInDown;
+}
+
+.reveal .slides section .fragment.r-fade-in-down-then-out.visible:not(.current-fragment)  {
+    @include animated;
+    @include fadeOut;
+}

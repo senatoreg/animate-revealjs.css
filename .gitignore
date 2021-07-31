@@ -5,6 +5,8 @@
 .log
 .sass-cache
 node_modules/
+build/
 test/
 npm-shrinkwrap.json
 package-lock.json
+**/*.css
