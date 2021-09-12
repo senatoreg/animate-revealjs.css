@@ -1,0 +1,21 @@
+@keyframes zoom2Out {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale3d(33, 33, 2);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@mixin zoom2Out {
+  animation-name: zoom2Out;
+}
+.zoom2Out {
+  @include zoom2Out;
+}

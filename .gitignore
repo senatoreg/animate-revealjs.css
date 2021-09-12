@@ -9,4 +9,3 @@ build/
 test/
 npm-shrinkwrap.json
 package-lock.json
-**/*.css

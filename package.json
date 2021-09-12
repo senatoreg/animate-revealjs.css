@@ -22,7 +22,7 @@
     "r-raw": "npx postcss build/animate-revealjs.css -o animate-revealjs.css --no-map --env development",
     "r-prod": "npx postcss build/animate-revealjs.css -o animate-revealjs.min.css --no-map --env production",
     "start": "npm-run-all sass raw prod compat",
-    "sass": "npx sass --no-source-map -I source source:build revealjs:build",
+    "sass": "npx sass --no-source-map -I source source/_base.scss build/_base.css;npx sass --no-source-map -I source source/_vars.scss build/_vars.css;npx sass --no-source-map -I source source:build revealjs:build",
     "compat": "npx postcss build/animate.css -o animate.compat.css --no-map --env compat",
     "dev": "npx postcss build/animate.css -o animate.css --no-map --env development -w",
     "raw": "npx postcss build/animate.css -o animate.css --no-map --env development",
