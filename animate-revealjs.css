@@ -3798,6 +3798,138 @@
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
 }
+@-webkit-keyframes flapIn {
+  0% {
+    -webkit-transform: rotate3d(1, 0, 0, 60deg);
+    transform: rotate3d(1, 0, 0, 60deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+  10% {
+    -webkit-transform: rotate3d(1, 0, 0, 54deg);
+    transform: rotate3d(1, 0, 0, 54deg);
+    opacity: 0.7;
+    visibility: visible;
+  }
+  80% {
+    -webkit-transform: rotate3d(1, 0, 0, 12deg);
+    transform: rotate3d(1, 0, 0, 12deg);
+    opacity: 0.7;
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+    transform: rotate3d(1, 0, 0, 0deg);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes flapIn {
+  0% {
+    -webkit-transform: rotate3d(1, 0, 0, 60deg);
+    transform: rotate3d(1, 0, 0, 60deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+  10% {
+    -webkit-transform: rotate3d(1, 0, 0, 54deg);
+    transform: rotate3d(1, 0, 0, 54deg);
+    opacity: 0.7;
+    visibility: visible;
+  }
+  80% {
+    -webkit-transform: rotate3d(1, 0, 0, 12deg);
+    transform: rotate3d(1, 0, 0, 12deg);
+    opacity: 0.7;
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+    transform: rotate3d(1, 0, 0, 0deg);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.animate__flapIn {
+  -webkit-animation-name: flapIn;
+  animation-name: flapIn;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-origin: center 200%;
+  transform-origin: center 200%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+  -webkit-perspective-origin: center 200%;
+  perspective-origin: center 200%;
+}
+@-webkit-keyframes flapOut {
+  0% {
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+    transform: rotate3d(1, 0, 0, 0deg);
+    opacity: 1;
+    visibility: visible;
+  }
+  20% {
+    -webkit-transform: rotate3d(1, 0, 0, -12deg);
+    transform: rotate3d(1, 0, 0, -12deg);
+    opacity: 0.7;
+    visibility: visible;
+  }
+  90% {
+    -webkit-transform: rotate3d(1, 0, 0, -54deg);
+    transform: rotate3d(1, 0, 0, -54deg);
+    opacity: 0.7;
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 0, 0, -60deg);
+    transform: rotate3d(1, 0, 0, -60deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes flapOut {
+  0% {
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+    transform: rotate3d(1, 0, 0, 0deg);
+    opacity: 1;
+    visibility: visible;
+  }
+  20% {
+    -webkit-transform: rotate3d(1, 0, 0, -12deg);
+    transform: rotate3d(1, 0, 0, -12deg);
+    opacity: 0.7;
+    visibility: visible;
+  }
+  90% {
+    -webkit-transform: rotate3d(1, 0, 0, -54deg);
+    transform: rotate3d(1, 0, 0, -54deg);
+    opacity: 0.7;
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 0, 0, -60deg);
+    transform: rotate3d(1, 0, 0, -60deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.animate__flapOut {
+  -webkit-animation-name: flapOut;
+  animation-name: flapOut;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-origin: center 200%;
+  transform-origin: center 200%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+  -webkit-perspective-origin: center 200%;
+  perspective-origin: center 200%;
+}
 .reveal .slides section .fragment.animate__r-delay {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
@@ -4366,6 +4498,64 @@
   animation-fill-mode: both;
   -webkit-animation-name: jackInTheBox;
   animation-name: jackInTheBox;
+}
+/* Animate CSS based Flap In */
+.reveal .slides section .fragment.animate__r-flap-in:not(.visible) {
+  opacity: 0;
+  visibility: hidden;
+}
+.reveal .slides section .fragment.animate__r-flap-in.visible:not(.current-fragment) {
+  opacity: 1;
+  visibility: visible;
+}
+.reveal .slides section .fragment.animate__r-flap-in.visible.current-fragment {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: flapIn;
+  animation-name: flapIn;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-origin: center 200%;
+  transform-origin: center 200%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+  -webkit-perspective-origin: center 200%;
+  perspective-origin: center 200%;
+}
+/* Animate CSS based Flap Out */
+.reveal .slides section .fragment.animate__r-flap-out:not(.visible) {
+  opacity: 1;
+  visibility: visible;
+}
+.reveal .slides section .fragment.animate__r-flap-out.visible:not(.current-fragment) {
+  opacity: 0;
+  visibility: hidden;
+}
+.reveal .slides section .fragment.animate__r-flap-out.visible.current-fragment {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: flapOut;
+  animation-name: flapOut;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-origin: center 200%;
+  transform-origin: center 200%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+  -webkit-perspective-origin: center 200%;
+  perspective-origin: center 200%;
 }
 /* Animate CSS based Back In Up then Out Down */
 .reveal .slides section .fragment.animate__r-back-in-up-then-out-down:not(.visible) {

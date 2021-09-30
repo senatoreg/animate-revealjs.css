@@ -99,6 +99,8 @@
 @use 'fading_exits/fadeOutDownBig.scss' as * ;
 @use 'fading_exits/fadeOutLeft.scss' as * ;
 @use 'fading_exits/fadeOut.scss' as * ;
+@use 'flap_entrances/flapIn.scss' as * ;
+@use 'flap_exits/flapOut.scss' as * ;
 
 @mixin visible {
     opacity: 1;
@@ -504,6 +506,34 @@
 .reveal .slides section .fragment.r-jack-in-the-box.visible.current-fragment {
     @include animated;
     @include jackInTheBox;
+}
+
+/* Animate CSS based Flap In */
+.reveal .slides section .fragment.r-flap-in:not(.visible) {
+    @include invisible;
+}
+
+.reveal .slides section .fragment.r-flap-in.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-flap-in.visible.current-fragment {
+    @include animated;
+    @include flapIn;
+}
+
+/* Animate CSS based Flap Out */
+.reveal .slides section .fragment.r-flap-out:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-flap-out.visible:not(.current-fragment) {
+    @include invisible;
+}
+
+.reveal .slides section .fragment.r-flap-out.visible.current-fragment {
+    @include animated;
+    @include flapOut;
 }
 
 /* Animate CSS based Back In Up then Out Down */

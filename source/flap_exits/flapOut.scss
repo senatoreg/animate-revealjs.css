@@ -1,0 +1,37 @@
+@keyframes flapOut {
+  0% {
+    transform: rotate3d(1, 0, 0, 0deg);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  20% {
+    transform: rotate3d(1, 0, 0, -12deg);
+    opacity: 0.7;
+    visibility: visible;
+  }
+
+  90% {
+    transform: rotate3d(1, 0, 0, -54deg);
+    opacity: 0.7;
+    visibility: visible;
+  }
+
+  100% {
+    transform: rotate3d(1, 0, 0, -60deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@mixin flapOut {
+  animation-name: flapOut;
+  animation-timing-function: linear;
+  transform-origin: center 200%;
+  transform-style: preserve-3d;
+  perspective: 1200px;
+  perspective-origin: center 200%;
+}
+.flapOut {
+  @include flapOut;
+}
