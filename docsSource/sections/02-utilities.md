@@ -48,7 +48,7 @@ You can control the speed of the animation by adding these classes, as below:
 | `animate__fast`   | `800ms`            |
 | `animate__faster` | `500ms`            |
 
-The `animate__animated` class has a default speed of `1s`. You can also customize the animations duration through the `--animate-duration` property, globaly or locally. This will affect both the animations and the utility classes. Example:
+The `animate__animated` class has a default speed of `1s`. You can also customize the animations duration through the `--animate-duration` property, globally or locally. This will affect both the animations and the utility classes. Example:
 
 ```css
 /* All animations will take twice as long to finish */
@@ -62,7 +62,7 @@ The `animate__animated` class has a default speed of `1s`. You can also customiz
 }
 ```
 
-Notice that some animations have a duration of less than 1 second. As we used the CSS `calc()` function, setting the duration through the `--animation-duration` property will respect these ratios. So, when you change the global duration all the animations will respond to that change!
+Notice that some animations have a duration of less than 1 second. As we used the CSS `calc()` function, setting the duration through the `--animation-duration` property will respect these ratios. So, when you change the global duration, all the animations will respond to that change!
 
 ### Repeating classes
 
@@ -90,4 +90,4 @@ As with the delay and speed classes, the `animate__repeat` class is based on the
 }
 ```
 
-Notice that `animate__infinite` doesn't use any custom property and changes to `--animate-repeat` will have no effect on it. Don't forget to read the [best practices](#best-practices) section to make the best use of repeating animations.
+Notice that `animate__infinite` doesn't use any custom property, and changes to `--animate-repeat` will have no effect. Don't forget to read the [best practices](#best-practices) section to make the best use of repeating animations.
