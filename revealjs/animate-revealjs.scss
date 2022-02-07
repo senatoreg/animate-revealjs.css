@@ -199,6 +199,7 @@
     @include animated;
     @include fadeOutDown;
 }
+
 /* Animate CSS based Bounce */
 .reveal .slides section .fragment.r-bounce:not(.visible) {
     @include visible;
@@ -211,6 +212,20 @@
 .reveal .slides section .fragment.r-bounce.visible.current-fragment {
     @include animated;
     @include bounce;
+}
+
+/* Animate CSS based Flash */
+.reveal .slides section .fragment.r-flash:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-flash.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-flash.visible.current-fragment {
+    @include animated;
+    @include flash;
 }
 
 /* Animate CSS based Pulse */
