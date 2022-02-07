@@ -4073,6 +4073,25 @@
   -webkit-transform-origin: center bottom;
   transform-origin: center bottom;
 }
+/* Animate CSS based Flash */
+.reveal .slides section .fragment.animate__r-flash:not(.visible) {
+  opacity: 1;
+  visibility: visible;
+}
+.reveal .slides section .fragment.animate__r-flash.visible:not(.current-fragment) {
+  opacity: 1;
+  visibility: visible;
+}
+.reveal .slides section .fragment.animate__r-flash.visible.current-fragment {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}
 /* Animate CSS based Pulse */
 .reveal .slides section .fragment.animate__r-pulse:not(.visible) {
   opacity: 1;
