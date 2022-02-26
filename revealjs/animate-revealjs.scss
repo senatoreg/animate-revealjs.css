@@ -105,11 +105,15 @@
 @mixin visible {
     opacity: 1;
     visibility: visible;
+    transition: unset;
+    will-change: unset;
 }
 
 @mixin invisible {
     opacity: 0;
     visibility: hidden;
+    transition: unset;
+    will-change: unset;
 }
 
 .reveal .slides section .fragment.r-delay {

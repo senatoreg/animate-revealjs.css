@@ -1,6 +1,8 @@
 @mixin animated {
   animation-duration: var(--animate-duration);
   animation-fill-mode: both;
+  transition: unset;
+  will-change: unset;
 }
 .animated {
   @include animated;
