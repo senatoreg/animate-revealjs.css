@@ -204,6 +204,146 @@
     @include fadeOutDown;
 }
 
+/* Animate CSS based Fade In Left*/
+.reveal .slides section .fragment.r-fade-in-left:not(.visible) {
+    @include invisible;
+}
+
+.reveal .slides section .fragment.r-fade-in-left.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-fade-in-left.visible.current-fragment {
+    @include animated;
+    @include fadeInLeft;
+}
+
+/* Animate CSS based Fade Out Left*/
+.reveal .slides section .fragment.r-fade-out-left:not(.visible) {
+    @include invisible;
+}
+
+.reveal .slides section .fragment.r-fade-out-left.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-fade-out-left.visible.current-fragment {
+    @include animated;
+    @include fadeOutLeft;
+}
+
+/* Animate CSS based Fade In Right*/
+.reveal .slides section .fragment.r-fade-in-right:not(.visible) {
+    @include invisible;
+}
+
+.reveal .slides section .fragment.r-fade-in-right.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-fade-in-right.visible.current-fragment {
+    @include animated;
+    @include fadeInRight;
+}
+
+/* Animate CSS based Fade Out Right*/
+.reveal .slides section .fragment.r-fade-out-right:not(.visible) {
+    @include invisible;
+}
+
+.reveal .slides section .fragment.r-fade-out-right.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-fade-out-right.visible.current-fragment {
+    @include animated;
+    @include fadeOutRight;
+}
+
+/* Animate CSS based Fade In Up Big*/
+.reveal .slides section .fragment.r-fade-in-up-big:not(.visible) {
+    @include invisible;
+}
+
+.reveal .slides section .fragment.r-fade-in-up-big.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-fade-in-up-big.visible.current-fragment {
+    @include animated;
+    @include fadeInUpBig;
+}
+
+/* Animate CSS based Fade Out Up Big */
+.reveal .slides section .fragment.r-fade-out-up-big:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-fade-out-up-big.visible:not(.current-fragment) {
+    @include invisible;
+}
+
+.reveal .slides section .fragment.r-fade-out-up.visible.current-fragment {
+    @include animated;
+    @include fadeOutUpBig;
+}
+
+/* Animate CSS based Fade In Down Big*/
+.reveal .slides section .fragment.r-fade-in-down-big:not(.visible) {
+    @include invisible;
+}
+
+.reveal .slides section .fragment.r-fade-in-down-big.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-fade-in-down-big.visible.current-fragment {
+    @include animated;
+    @include fadeInDownBig;
+}
+
+/* Animate CSS based Fade Out Down Big */
+.reveal .slides section .fragment.r-fade-out-down-big:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-fade-out-down-big.visible:not(.current-fragment) {
+    @include invisible;
+}
+
+.reveal .slides section .fragment.r-fade-out-down-big.visible.current-fragment {
+    @include animated;
+    @include fadeOutDownBig;
+}
+
+/* Animate CSS based Fade In Left Big*/
+.reveal .slides section .fragment.r-fade-in-left-big:not(.visible) {
+    @include invisible;
+}
+
+.reveal .slides section .fragment.r-fade-in-left-big.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-fade-in-left-big.visible.current-fragment {
+    @include animated;
+    @include fadeInLeftBig;
+}
+
+/* Animate CSS based Fade In Right Big*/
+.reveal .slides section .fragment.r-fade-in-right-big:not(.visible) {
+    @include invisible;
+}
+
+.reveal .slides section .fragment.r-fade-in-right-big.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-fade-in-right-big.visible.current-fragment {
+    @include animated;
+    @include fadeInRightBig;
+}
+
 /* Animate CSS based Bounce */
 .reveal .slides section .fragment.r-bounce:not(.visible) {
     @include visible;
