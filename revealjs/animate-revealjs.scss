@@ -135,6 +135,13 @@
 }
 
 /* Animate CSS based Fade Out */
+.reveal .slides section.present:not(.stack) .rFadeOut,
+.reveal .slides section.stack.present section.present .rFadeOut {
+    @include animated_delay-1s;
+    @include animated;
+    @include fadeOut;
+}
+
 .reveal .slides section .fragment.r-fade-out:not(.visible) {
     @include visible;
 }
@@ -149,6 +156,13 @@
 }
 
 /* Animate CSS based Fade In Up*/
+.reveal .slides section.present:not(.stack) .rFadeInUp,
+.reveal .slides section.stack.present section.present .rFadeInUp {
+    @include animated_delay-1s;
+    @include animated;
+    @include fadeInUp;
+}
+
 .reveal .slides section .fragment.r-fade-in-up:not(.visible) {
     @include invisible;
 }
@@ -177,6 +191,13 @@
 }
 
 /* Animate CSS based Fade In Down*/
+.reveal .slides section.present:not(.stack) .rFadeInDown,
+.reveal .slides section.stack.present section.present .rFadeInDown {
+    @include animated_delay-1s;
+    @include animated;
+    @include fadeInDown;
+}
+
 .reveal .slides section .fragment.r-fade-in-down:not(.visible) {
     @include invisible;
 }

@@ -27,7 +27,7 @@ module.exports = (ctx) => {
       'postcss-import': {root: ctx.file.dirname},
       'postcss-prefixer': {
         prefix,
-        ignore: [/\[class\*=.*\]/, /^\.reveal$/, /^\.slides$/, /^\.fragment$/, /^section/, /^\.visible$/, /^\.current-fragment$/],
+        ignore: [/\[class\*=.*\]/, /^\.reveal$/, /^\.slides$/, /^\.fragment$/, /^section/, /^\.visible$/, /^\.current-fragment$/, /^.stack/, /^.present/],
       },
       'postcss-preset-env': {
         autoprefixer: {

@@ -19,6 +19,7 @@ Reveal.addEventListener('ready', function ( event ) {
   });
 });
 
+/*
 // Animate items that are not in a fragment
 Reveal.addEventListener('slidechanged', function( event ) {
   // Animate elements that are not a fragment (or in a fragment)
@@ -35,6 +36,7 @@ Reveal.addEventListener('slidechanged', function( event ) {
     $(this).removeClass('animate__' + $(this).attr('data-animate-repeat'));
   });
 });
+*/
 
 // Animate fragments
 Reveal.addEventListener('fragmentshown', function( event ) {

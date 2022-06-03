@@ -2204,6 +2204,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .animate__animated.animate__infinite {
   -webkit-animation-iteration-count: infinite;
@@ -3942,10 +3945,16 @@
 .reveal .slides section .fragment.animate__r-fade-in:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-fade-in.visible:not(.current-fragment) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-fade-in.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -3954,17 +3963,44 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
 /* Animate CSS based Fade Out */
+.reveal .slides section.present:not(.stack) .animate__rFadeOut,
+.reveal .slides section.stack.present section.present .animate__rFadeOut {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-delay: var(--animate-delay);
+  animation-delay: var(--animate-delay);
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
 .reveal .slides section .fragment.animate__r-fade-out:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-fade-out.visible:not(.current-fragment) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-fade-out.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -3973,17 +4009,44 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
 }
 /* Animate CSS based Fade In Up*/
+.reveal .slides section.present:not(.stack) .animate__rFadeInUp,
+.reveal .slides section.stack.present section.present .animate__rFadeInUp {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-delay: var(--animate-delay);
+  animation-delay: var(--animate-delay);
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
 .reveal .slides section .fragment.animate__r-fade-in-up:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-fade-in-up.visible:not(.current-fragment) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-fade-in-up.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -3992,6 +4055,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
@@ -3999,10 +4065,16 @@
 .reveal .slides section .fragment.animate__r-fade-out-up:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-fade-out-up.visible:not(.current-fragment) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-fade-out-up.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4011,17 +4083,44 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: fadeOutUp;
   animation-name: fadeOutUp;
 }
 /* Animate CSS based Fade In Down*/
+.reveal .slides section.present:not(.stack) .animate__rFadeInDown,
+.reveal .slides section.stack.present section.present .animate__rFadeInDown {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-delay: var(--animate-delay);
+  animation-delay: var(--animate-delay);
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
 .reveal .slides section .fragment.animate__r-fade-in-down:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-fade-in-down.visible:not(.current-fragment) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-fade-in-down.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4030,6 +4129,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
@@ -4037,10 +4139,16 @@
 .reveal .slides section .fragment.animate__r-fade-out-down:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-fade-out-down.visible:not(.current-fragment) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-fade-out-down.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4049,17 +4157,306 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: fadeOutDown;
   animation-name: fadeOutDown;
+}
+/* Animate CSS based Fade In Left*/
+.reveal .slides section .fragment.animate__r-fade-in-left:not(.visible) {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-in-left.visible:not(.current-fragment) {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-in-left.visible.current-fragment {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+/* Animate CSS based Fade Out Left*/
+.reveal .slides section .fragment.animate__r-fade-out-left:not(.visible) {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-out-left.visible:not(.current-fragment) {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-out-left.visible.current-fragment {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+/* Animate CSS based Fade In Right*/
+.reveal .slides section .fragment.animate__r-fade-in-right:not(.visible) {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-in-right.visible:not(.current-fragment) {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-in-right.visible.current-fragment {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+/* Animate CSS based Fade Out Right*/
+.reveal .slides section .fragment.animate__r-fade-out-right:not(.visible) {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-out-right.visible:not(.current-fragment) {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-out-right.visible.current-fragment {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight;
+}
+/* Animate CSS based Fade In Up Big*/
+.reveal .slides section .fragment.animate__r-fade-in-up-big:not(.visible) {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-in-up-big.visible:not(.current-fragment) {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-in-up-big.visible.current-fragment {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+  -webkit-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
+}
+/* Animate CSS based Fade Out Up Big */
+.reveal .slides section .fragment.animate__r-fade-out-up-big:not(.visible) {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-out-up-big.visible:not(.current-fragment) {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-out-up.visible.current-fragment {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+  -webkit-animation-name: fadeOutUpBig;
+  animation-name: fadeOutUpBig;
+}
+/* Animate CSS based Fade In Down Big*/
+.reveal .slides section .fragment.animate__r-fade-in-down-big:not(.visible) {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-in-down-big.visible:not(.current-fragment) {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-in-down-big.visible.current-fragment {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig;
+}
+/* Animate CSS based Fade Out Down Big */
+.reveal .slides section .fragment.animate__r-fade-out-down-big:not(.visible) {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-out-down-big.visible:not(.current-fragment) {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-out-down-big.visible.current-fragment {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+  -webkit-animation-name: fadeOutDownBig;
+  animation-name: fadeOutDownBig;
+}
+/* Animate CSS based Fade In Left Big*/
+.reveal .slides section .fragment.animate__r-fade-in-left-big:not(.visible) {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-in-left-big.visible:not(.current-fragment) {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-in-left-big.visible.current-fragment {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+  -webkit-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
+}
+/* Animate CSS based Fade In Right Big*/
+.reveal .slides section .fragment.animate__r-fade-in-right-big:not(.visible) {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-in-right-big.visible:not(.current-fragment) {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+}
+.reveal .slides section .fragment.animate__r-fade-in-right-big.visible.current-fragment {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+  -webkit-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig;
 }
 /* Animate CSS based Bounce */
 .reveal .slides section .fragment.animate__r-bounce:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-bounce.visible:not(.current-fragment) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-bounce.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4068,6 +4465,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: bounce;
   animation-name: bounce;
   -webkit-transform-origin: center bottom;
@@ -4077,10 +4477,16 @@
 .reveal .slides section .fragment.animate__r-flash:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-flash.visible:not(.current-fragment) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-flash.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4089,6 +4495,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: flash;
   animation-name: flash;
 }
@@ -4096,10 +4505,16 @@
 .reveal .slides section .fragment.animate__r-pulse:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-pulse.visible:not(.current-fragment) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-pulse.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4108,6 +4523,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: pulse;
   animation-name: pulse;
   -webkit-animation-timing-function: ease-in-out;
@@ -4118,10 +4536,16 @@
 .reveal .slides section .fragment.animate__r-rubber-band:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-rubber-band.visible:not(.current-fragment) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-rubber-band.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4130,6 +4554,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
 }
@@ -4137,10 +4564,16 @@
 .reveal .slides section .fragment.animate__r-back-in-up:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-back-in-up.visible:not(.current-fragment) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-back-in-up.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4149,6 +4582,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: backInUp;
   animation-name: backInUp;
 }
@@ -4156,10 +4592,16 @@
 .reveal .slides section .fragment.animate__r-back-in-down:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-back-in-down.visible:not(.current-fragment) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-back-in-down.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4168,6 +4610,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: backInDown;
   animation-name: backInDown;
 }
@@ -4175,10 +4620,16 @@
 .reveal .slides section .fragment.animate__r-back-out-up:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-back-out-up.visible:not(.current-fragment) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-back-out-up.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4187,6 +4638,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: backOutUp;
   animation-name: backOutUp;
 }
@@ -4194,10 +4648,16 @@
 .reveal .slides section .fragment.animate__r-back-out-down:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-back-out-down.visible:not(.current-fragment) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-back-out-down.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4206,6 +4666,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: backOutDown;
   animation-name: backOutDown;
 }
@@ -4213,10 +4676,16 @@
 .reveal .slides section .fragment.animate__r-flip-in-x:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-flip-in-x.visible:not(.current-fragment) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-flip-in-x.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4225,6 +4694,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   -webkit-animation-name: flipInX;
@@ -4234,10 +4706,16 @@
 .reveal .slides section .fragment.animate__r-flip-out-x:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-flip-out-x.visible:not(.current-fragment) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-flip-out-x.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4246,6 +4724,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-duration: calc(1s * 0.75);
   animation-duration: calc(1s * 0.75);
   -webkit-animation-duration: calc(var(--animate-duration) * 0.75);
@@ -4259,10 +4740,16 @@
 .reveal .slides section .fragment.animate__r-zoom-in:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-zoom-in.visible:not(.current-fragment) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-zoom-in.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4271,6 +4758,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
 }
@@ -4278,10 +4768,16 @@
 .reveal .slides section .fragment.animate__r-zoom-out:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-zoom-out.visible:not(.current-fragment) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-zoom-out.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4290,6 +4786,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: zoomOut;
   animation-name: zoomOut;
 }
@@ -4297,10 +4796,16 @@
 .reveal .slides section .fragment.animate__r-zoom2-out:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-zoom2-out.visible:not(.current-fragment) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-zoom2-out.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4309,6 +4814,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: zoom2Out;
   animation-name: zoom2Out;
 }
@@ -4316,10 +4824,16 @@
 .reveal .slides section .fragment.animate__r-zoom-in-up:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-zoom-in-up.visible:not(.current-fragment) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-zoom-in-up.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4328,6 +4842,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: zoomInUp;
   animation-name: zoomInUp;
 }
@@ -4335,10 +4852,16 @@
 .reveal .slides section .fragment.animate__r-zoom-out-up:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-zoom-out-up.visible:not(.current-fragment) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-zoom-out-up.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4347,6 +4870,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: zoomOutUp;
   animation-name: zoomOutUp;
   -webkit-transform-origin: center bottom;
@@ -4356,10 +4882,16 @@
 .reveal .slides section .fragment.animate__r-zoom-in-down:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-zoom-in-down.visible:not(.current-fragment) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-zoom-in-down.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4368,6 +4900,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: zoomInDown;
   animation-name: zoomInDown;
 }
@@ -4375,10 +4910,16 @@
 .reveal .slides section .fragment.animate__r-zoom-out-down:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-zoom-out-down.visible:not(.current-fragment) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-zoom-out-down.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4387,6 +4928,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: zoomOutDown;
   animation-name: zoomOutDown;
   -webkit-transform-origin: center bottom;
@@ -4396,10 +4940,16 @@
 .reveal .slides section .fragment.animate__r-lightspeed-in-right:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-lightspeed-in-right.visible:not(.current-fragment) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-lightspeed-in-right.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4408,6 +4958,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: lightSpeedInRight;
   animation-name: lightSpeedInRight;
   -webkit-animation-timing-function: ease-out;
@@ -4417,10 +4970,16 @@
 .reveal .slides section .fragment.animate__r-lightspeed-in-left:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-lightspeed-in-left.visible:not(.current-fragment) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-lightspeed-in-left.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4429,6 +4988,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: lightSpeedInLeft;
   animation-name: lightSpeedInLeft;
   -webkit-animation-timing-function: ease-out;
@@ -4438,10 +5000,16 @@
 .reveal .slides section .fragment.animate__r-lightspeed-out-right:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-lightspeed-out-right.visible:not(.current-fragment) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-lightspeed-out-right.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4450,6 +5018,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: lightSpeedOutRight;
   animation-name: lightSpeedOutRight;
   -webkit-animation-timing-function: ease-in;
@@ -4459,10 +5030,16 @@
 .reveal .slides section .fragment.animate__r-lightspeed-out-left:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-lightspeed-out-left.visible:not(.current-fragment) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-lightspeed-out-left.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4471,6 +5048,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: lightSpeedOutLeft;
   animation-name: lightSpeedOutLeft;
   -webkit-animation-timing-function: ease-in;
@@ -4480,10 +5060,16 @@
 .reveal .slides section .fragment.animate__r-hinge:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-hinge.visible:not(.current-fragment) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-hinge.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4492,6 +5078,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-transform-origin: top left;
   transform-origin: top left;
   -webkit-animation-duration: calc(1s * 2);
@@ -4505,10 +5094,16 @@
 .reveal .slides section .fragment.animate__r-jack-in-the-box:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-jack-in-the-box.visible:not(.current-fragment) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-jack-in-the-box.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4517,6 +5112,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: jackInTheBox;
   animation-name: jackInTheBox;
 }
@@ -4524,10 +5122,16 @@
 .reveal .slides section .fragment.animate__r-flap-in:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-flap-in.visible:not(.current-fragment) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-flap-in.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4536,6 +5140,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: flapIn;
   animation-name: flapIn;
   -webkit-animation-timing-function: linear;
@@ -4553,10 +5160,16 @@
 .reveal .slides section .fragment.animate__r-flap-out:not(.visible) {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-flap-out.visible:not(.current-fragment) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-flap-out.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4565,6 +5178,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: flapOut;
   animation-name: flapOut;
   -webkit-animation-timing-function: linear;
@@ -4582,6 +5198,9 @@
 .reveal .slides section .fragment.animate__r-back-in-up-then-out-down:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-back-in-up-then-out-down.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4590,6 +5209,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: backInUp;
   animation-name: backInUp;
 }
@@ -4600,6 +5222,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: backOutDown;
   animation-name: backOutDown;
 }
@@ -4607,6 +5232,9 @@
 .reveal .slides section .fragment.animate__r-back-in-down-then-out-up:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-back-in-down-then-out-up.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4615,6 +5243,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: backInDown;
   animation-name: backInDown;
 }
@@ -4625,6 +5256,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: backOutUp;
   animation-name: backOutUp;
 }
@@ -4632,6 +5266,9 @@
 .reveal .slides section .fragment.animate__r-fade-in-then-out:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-fade-in-then-out.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4640,6 +5277,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
@@ -4650,6 +5290,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
 }
@@ -4657,6 +5300,9 @@
 .reveal .slides section .fragment.animate__r-fade-in-up-then-out-up:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-fade-in-up-then-out-up.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4665,6 +5311,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
@@ -4675,6 +5324,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: fadeOutUp;
   animation-name: fadeOutUp;
 }
@@ -4682,6 +5334,9 @@
 .reveal .slides section .fragment.animate__r-fade-in-up-then-out:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-fade-in-up-then-out.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4690,6 +5345,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
@@ -4700,6 +5358,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
 }
@@ -4707,6 +5368,9 @@
 .reveal .slides section .fragment.animate__r-fade-in-down-then-out:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-fade-in-down-then-out.visible.current-fragment {
   -webkit-animation-duration: 1s;
@@ -4715,6 +5379,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
@@ -4725,6 +5392,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
 }
@@ -4732,6 +5402,9 @@
 .reveal .slides section .fragment.animate__r-lightspeed-in-right-then-left:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-lightspeed-in-right-then-left.visible:not(.current-fragment) {
   -webkit-animation-duration: 1s;
@@ -4740,6 +5413,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: lightSpeedOutLeft;
   animation-name: lightSpeedOutLeft;
   -webkit-animation-timing-function: ease-in;
@@ -4752,6 +5428,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: lightSpeedInRight;
   animation-name: lightSpeedInRight;
   -webkit-animation-timing-function: ease-out;
@@ -4761,6 +5440,9 @@
 .reveal .slides section .fragment.animate__r-lightspeed-in-left-then-right:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-lightspeed-in-left-then-right.visible:not(.current-fragment) {
   -webkit-animation-duration: 1s;
@@ -4769,6 +5451,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: lightSpeedOutRight;
   animation-name: lightSpeedOutRight;
   -webkit-animation-timing-function: ease-in;
@@ -4781,6 +5466,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: lightSpeedInLeft;
   animation-name: lightSpeedInLeft;
   -webkit-animation-timing-function: ease-out;
@@ -4790,6 +5478,9 @@
 .reveal .slides section .fragment.animate__r-flip-in-x-then-fade-out:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-flip-in-x-then-fade-out.visible:not(.current-fragment) {
   -webkit-animation-duration: 1s;
@@ -4798,6 +5489,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
 }
@@ -4808,6 +5502,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   -webkit-animation-name: flipInX;
@@ -4817,6 +5514,9 @@
 .reveal .slides section .fragment.animate__r-flip-in-x-then-hinge:not(.visible) {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
 }
 .reveal .slides section .fragment.animate__r-flip-in-x-then-hinge.visible:not(.current-fragment) {
   -webkit-animation-duration: 1s;
@@ -4825,6 +5525,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-transform-origin: top left;
   transform-origin: top left;
   -webkit-animation-duration: calc(1s * 2);
@@ -4841,6 +5544,9 @@
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   -webkit-animation-name: flipInX;
