@@ -408,7 +408,6 @@
 }
 
 /* Animate CSS based Rubber Band */
-/* Animate CSS based Rubber Band */
 .reveal .slides section .fragment.r-rubber-band:not(.visible) {
     @include visible;
 }
@@ -420,6 +419,76 @@
 .reveal .slides section .fragment.r-rubber-band.visible.current-fragment {
     @include animated;
     @include rubberBand;
+}
+
+/* Animate CSS based shakeX */
+.reveal .slides section .fragment.r-shake-x:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-shake-x.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-shake-x.visible.current-fragment {
+    @include animated;
+    @include shakeX;
+}
+
+/* Animate CSS based shakeY */
+.reveal .slides section .fragment.r-shake-y:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-shake-y.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-shake-y.visible.current-fragment {
+    @include animated;
+    @include shakeY;
+}
+
+/* Animate CSS based headShake */
+.reveal .slides section .fragment.r-head-shake:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-head-shake.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-head-shake.visible.current-fragment {
+    @include animated;
+    @include headShake;
+}
+
+/* Animate CSS based Tada */
+.reveal .slides section .fragment.r-tada:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-tada.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-tada.visible.current-fragment {
+    @include animated;
+    @include tada;
+}
+
+/* Animate CSS based heartBeat */
+.reveal .slides section .fragment.r-heart-beat:not(.visible) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-heart-beat.visible:not(.current-fragment) {
+    @include visible;
+}
+
+.reveal .slides section .fragment.r-heart-beat.visible.current-fragment {
+    @include animated;
+    @include heartBeat;
 }
 
 /* Animate CSS based Back In Up */
