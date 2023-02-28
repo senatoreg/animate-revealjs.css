@@ -121,6 +121,13 @@
 }
 
 /* Animate CSS based Fade In */
+.reveal .slides section.present:not(.stack) .rFadeIn,
+.reveal .slides section.stack.present section.present .rFadeIn {
+    @include animated_delay-1s;
+    @include animated;
+    @include fadeIn;
+}
+
 .reveal .slides section .fragment.r-fade-in:not(.visible) {
     @include invisible;
 }

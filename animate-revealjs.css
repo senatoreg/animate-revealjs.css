@@ -5,7 +5,7 @@
  * Version - 4.1.1
  * Licensed under the Hippocratic License 2.1 - http://firstdonoharm.dev
  *
- * Copyright (c) 2022 Animate.css
+ * Copyright (c) 2023 Animate.css
  */
 @-webkit-keyframes slideOutRight {
   from {
@@ -2293,7 +2293,6 @@
     -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
   }
-
   .animate__animated[class*=Out] {
     opacity: 0;
   }
@@ -3942,6 +3941,24 @@
   animation-delay: var(--animate-delay);
 }
 /* Animate CSS based Fade In */
+.reveal .slides section.present:not(.stack) .animate__rFadeIn,
+.reveal .slides section.stack.present section.present .animate__rFadeIn {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-delay: var(--animate-delay);
+  animation-delay: var(--animate-delay);
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: unset;
+  transition: unset;
+  will-change: unset;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
 .reveal .slides section .fragment.animate__r-fade-in:not(.visible) {
   opacity: 0;
   visibility: hidden;
