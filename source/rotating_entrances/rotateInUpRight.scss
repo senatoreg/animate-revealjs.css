@@ -2,6 +2,7 @@
   from {
     transform: rotate3d(0, 0, 1, -90deg);
     opacity: 0;
+    visibility: hidden;
   }
 
   to {

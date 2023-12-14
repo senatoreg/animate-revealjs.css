@@ -9,6 +9,7 @@
 
   from {
     opacity: 0;
+    visibility: hidden;
     transform: translate3d(0, 3000px, 0) scaleY(5);
   }
 

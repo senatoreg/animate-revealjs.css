@@ -1,6 +1,7 @@
 @keyframes zoomInUp {
   from {
     opacity: 0;
+    visibility: hidden;
     transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }

@@ -5,11 +5,13 @@
 
   50% {
     opacity: 0;
+    visibility: hidden;
     transform: scale3d(33, 33, 2);
   }
 
   to {
     opacity: 0;
+    visibility: hidden;
   }
 }
 
